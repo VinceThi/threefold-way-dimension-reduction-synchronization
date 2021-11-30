@@ -3,7 +3,7 @@ Code for the paper "[Threefold way to the dimension reduction of dynamics on net
 
 ```
 @article{Thibeault2020,
-author = {Thibeault, V. and St-Onge, G. and Dub{\'{e}}, Louis J. and Desrosiers, P.},
+author = {Thibeault, Vincent and St-Onge, Guillaume and Dub{\'{e}}, Louis J. and Desrosiers, Patrick},
 doi = {10.1103/PhysRevResearch.2.043215},
 journal = {Phys. Rev. Res.},
 pages = {043215},
