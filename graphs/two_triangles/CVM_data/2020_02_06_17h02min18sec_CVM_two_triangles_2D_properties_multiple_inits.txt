@@ -1,0 +1,948 @@
+One target
+---------------------- T1 = W -> T2 = None -> T3 = None------------------------ 
+
+ 
+ V_T1 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ V_T2 = None
+ 
+ V_T3 = None
+ 
+ M = [[0.3333 0.     0.3333 0.     0.3333 0.    ]
+ [0.     0.3333 0.     0.3333 0.     0.3333]]
+ 
+ m = [0.1667 0.1667 0.1667 0.1667 0.1667 0.1667]
+ 
+ redW = M W M^+ =
+[[ 0.2  0. ]
+ [ 0.  -0.2]]
+ 
+ spec(redW) = [ 0.2 -0.2]
+ 
+ redK = M K M^+ =
+[[2.3333 0.    ]
+ [0.     2.3333]]
+ 
+ spec(redK) = [2.3333 2.3333]
+ 
+ redA = M A M^+ =
+[[0.6667 1.6667]
+ [1.6667 0.6667]]
+ 
+ spec(redA) = [ 2.3333 -1.    ]
+ 
+ snmf_frobenius_error = None
+ 
+ onmf_frobenius_error = None
+ 
+ onmf_ortho_error = None
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.1111
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.1571
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = K -> T2 = None -> T3 = None------------------------ 
+
+ 
+ V_T1 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ V_T2 = None
+ 
+ V_T3 = None
+ 
+ M = [[0.3333 0.3333 0.     0.     0.3333 0.    ]
+ [0.     0.     0.5    0.5    0.     0.    ]]
+ 
+ m = [0.2 0.2 0.2 0.2 0.2 0. ]
+ 
+ redW = M W M^+ =
+[[0.0667 0.    ]
+ [0.     0.    ]]
+ 
+ spec(redW) = [0.0667 0.    ]
+ 
+ redK = M K M^+ =
+[[2. 0.]
+ [0. 3.]]
+ 
+ spec(redK) = [2. 3.]
+ 
+ redA = M A M^+ =
+[[0.6667 1.    ]
+ [1.5    1.    ]]
+ 
+ spec(redA) = [-0.4027  2.0694]
+ 
+ snmf_frobenius_error = None
+ 
+ onmf_frobenius_error = None
+ 
+ onmf_ortho_error = None
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0515
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.0
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.2022
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = A -> T2 = None -> T3 = None------------------------ 
+
+ 
+ V_T1 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ V_T2 = None
+ 
+ V_T3 = None
+ 
+ M = [[8.3630e-066 8.3603e-066 5.0896e-017 3.1029e-001 3.4485e-001 3.4485e-001]
+ [2.8148e-001 2.8148e-001 3.3041e-001 1.0662e-001 1.1928e-300 1.7119e-299]]
+ 
+ m = [0.1407 0.1407 0.1652 0.2085 0.1724 0.1724]
+ 
+ redW = M W M^+ =
+[[-0.0559 -0.0171]
+ [-0.0271  0.0733]]
+ 
+ spec(redW) = [-0.0594  0.0768]
+ 
+ redK = M K M^+ =
+[[2.2797 0.0854]
+ [0.0569 2.4253]]
+ 
+ spec(redK) = [2.2517 2.4533]
+ 
+ redA = M A M^+ =
+[[1.9533 0.3994]
+ [0.3174 2.1162]]
+ 
+ spec(redA) = [1.6695 2.4   ]
+ 
+ snmf_frobenius_error = 4.856664529071433e-10
+ 
+ onmf_frobenius_error = 0.06170832493028175
+ 
+ onmf_ortho_error = 0.15324031502478497
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0425
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.1056
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.0712
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+Two target
+---------------------- T1 = W -> T2 = K -> T3 = None------------------------ 
+
+ 
+ V_T1 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ V_T2 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ V_T3 = None
+ 
+ M = [[3.3116e-01 2.1704e-03 3.3116e-01 2.1704e-03 3.3116e-01 2.1704e-03]
+ [3.4555e-09 3.3333e-01 1.3797e-08 3.3333e-01 2.2916e-08 3.3333e-01]]
+ 
+ m = [0.1656 0.1678 0.1656 0.1678 0.1656 0.1678]
+ 
+ redW = M W M^+ =
+[[ 2.0000e-01 -2.6044e-03]
+ [ 1.6172e-08 -2.0000e-01]]
+ 
+ spec(redW) = [ 0.2 -0.2]
+ 
+ redK = M K M^+ =
+[[ 2.3333e+00 -8.5367e-10]
+ [-8.9230e-10  2.3333e+00]]
+ 
+ spec(redK) = [2.3333 2.3333]
+ 
+ redA = M A M^+ =
+[[0.6776 1.6557]
+ [1.6776 0.6557]]
+ 
+ spec(redA) = [ 2.3333 -1.    ]
+ 
+ snmf_frobenius_error = None
+ 
+ onmf_frobenius_error = 3.5748454038808584e-08
+ 
+ onmf_ortho_error = 0.009268291129640035
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.1108
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.1564
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = W -> T2 = A -> T3 = None------------------------ 
+
+ 
+ V_T1 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ V_T2 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ V_T3 = None
+ 
+ M = [[1.3074e-01 2.0260e-01 1.3074e-01 2.0260e-01 1.3074e-01 2.0260e-01]
+ [3.3324e-01 8.9316e-05 3.3324e-01 8.9316e-05 3.3324e-01 8.9316e-05]]
+ 
+ m = [0.232  0.1013 0.232  0.1013 0.232  0.1013]
+ 
+ redW = M W M^+ =
+[[-2.0007e-01  1.5695e-01]
+ [-1.7637e-04  2.0007e-01]]
+ 
+ spec(redW) = [-0.2  0.2]
+ 
+ redK = M K M^+ =
+[[ 2.3333e+00 -6.6613e-16]
+ [-2.6303e-16  2.3333e+00]]
+ 
+ spec(redK) = [2.3333 2.3333]
+ 
+ redA = M A M^+ =
+[[ 1.7419  0.5914]
+ [ 2.7419 -0.4086]]
+ 
+ spec(redA) = [ 2.3333 -1.    ]
+ 
+ snmf_frobenius_error = 1.9485120785439408e-11
+ 
+ onmf_frobenius_error = 0.0002297853821759739
+ 
+ onmf_ortho_error = 0.7671288449490732
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.097
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.1259
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = K -> T2 = W -> T3 = None------------------------ 
+
+ 
+ V_T1 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ V_T2 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ V_T3 = None
+ 
+ M = [[7.0153e-05 7.0153e-05 4.9989e-01 4.9989e-01 7.0153e-05 0.0000e+00]
+ [3.3178e-01 3.3178e-01 2.3287e-03 2.3287e-03 3.3178e-01 0.0000e+00]]
+ 
+ m = [0.1659 0.1659 0.2511 0.2511 0.1659 0.    ]
+ 
+ redW = M W M^+ =
+[[-6.5666e-08  1.4096e-05]
+ [-3.1056e-04  6.6667e-02]]
+ 
+ spec(redW) = [0.     0.0667]
+ 
+ redK = M K M^+ =
+[[ 3.0000e+00 -2.1144e-04]
+ [ 4.6584e-03  2.0000e+00]]
+ 
+ spec(redK) = [3. 2.]
+ 
+ redA = M A M^+ =
+[[0.9932 1.5066]
+ [0.9971 0.6735]]
+ 
+ spec(redA) = [ 2.0694 -0.4027]
+ 
+ snmf_frobenius_error = None
+ 
+ onmf_frobenius_error = 2.1625231013485156e-08
+ 
+ onmf_ortho_error = 0.008347607975021498
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0514
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.0
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.2021
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = K -> T2 = A -> T3 = None------------------------ 
+
+ 
+ V_T1 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ V_T2 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ V_T3 = None
+ 
+ M = [[0.314  0.314  0.029  0.029  0.314  0.    ]
+ [0.009  0.009  0.4865 0.4865 0.009  0.    ]]
+ 
+ m = [0.1615 0.1615 0.2578 0.2578 0.1615 0.    ]
+ 
+ redW = M W M^+ =
+[[ 0.0668 -0.004 ]
+ [ 0.0019 -0.0001]]
+ 
+ spec(redW) = [6.6667e-02 5.2448e-18]
+ 
+ redK = M K M^+ =
+[[ 1.9983  0.0598]
+ [-0.0288  3.0017]]
+ 
+ spec(redK) = [2. 3.]
+ 
+ redA = M A M^+ =
+[[0.7309 0.9842]
+ [1.5417 0.9358]]
+ 
+ spec(redA) = [-0.4027  2.0694]
+ 
+ snmf_frobenius_error = 1.271935964593221e-10
+ 
+ onmf_frobenius_error = 3.6702056269522314e-06
+ 
+ onmf_ortho_error = 0.13847191974822085
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0496
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.0
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.1996
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = A -> T2 = W -> T3 = None------------------------ 
+
+ 
+ V_T1 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ V_T2 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ V_T3 = None
+ 
+ M = [[2.7308e-58 1.7262e-58 5.2340e-02 3.5499e-01 2.9633e-01 2.9633e-01]
+ [2.9633e-01 2.9633e-01 3.5499e-01 5.2340e-02 2.6955e-55 1.0068e-54]]
+ 
+ m = [0.1482 0.1482 0.2037 0.2037 0.1482 0.1482]
+ 
+ redW = M W M^+ =
+[[-0.0822  0.01  ]
+ [-0.01    0.0822]]
+ 
+ spec(redW) = [-0.0816  0.0816]
+ 
+ redK = M K M^+ =
+[[2.4143 0.0715]
+ [0.0715 2.4143]]
+ 
+ spec(redK) = [2.3428 2.4858]
+ 
+ redA = M A M^+ =
+[[2.0353 0.3784]
+ [0.3784 2.0353]]
+ 
+ spec(redA) = [1.6569 2.4136]
+ 
+ snmf_frobenius_error = None
+ 
+ onmf_frobenius_error = 0.04151947195564501
+ 
+ onmf_ortho_error = 0.17265285046435017
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0411
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.1101
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.0756
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = A -> T2 = K -> T3 = None------------------------ 
+
+ 
+ V_T1 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ V_T2 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ V_T3 = None
+ 
+ M = [[2.8975e-01 2.8975e-01 3.5059e-01 6.9917e-02 1.2783e-78 4.6751e-79]
+ [2.5734e-20 2.5772e-20 2.9408e-02 3.6293e-01 3.0383e-01 3.0383e-01]]
+ 
+ m = [0.1449 0.1449 0.19   0.2164 0.1519 0.1519]
+ 
+ redW = M W M^+ =
+[[ 0.0821 -0.0187]
+ [-0.0002 -0.0825]]
+ 
+ spec(redW) = [ 0.0821 -0.0825]
+ 
+ redK = M K M^+ =
+[[2.4244 0.0648]
+ [0.0712 2.41  ]]
+ 
+ spec(redK) = [2.4855 2.3489]
+ 
+ redA = M A M^+ =
+[[2.0639 0.3631]
+ [0.3978 1.9951]]
+ 
+ spec(redA) = [2.4111 1.6479]
+ 
+ snmf_frobenius_error = None
+ 
+ onmf_frobenius_error = 0.031548451145920184
+ 
+ onmf_ortho_error = 0.16477896308712575
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0412
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.1107
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.0827
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+Three target
+---------------------- T1 = W -> T2 = K -> T3 = A------------------------ 
+
+ 
+ V_T1 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ V_T2 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ V_T3 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ M = [[5.0161e-05 3.3328e-01 5.0161e-05 3.3328e-01 5.0161e-05 3.3328e-01]
+ [3.3117e-01 2.1668e-03 3.3117e-01 2.1668e-03 3.3117e-01 2.1668e-03]]
+ 
+ m = [0.1656 0.1677 0.1656 0.1677 0.1656 0.1677]
+ 
+ redW = M W M^+ =
+[[-2.0000e-01  6.0587e-05]
+ [-2.6006e-03  2.0000e-01]]
+ 
+ spec(redW) = [-0.2  0.2]
+ 
+ redK = M K M^+ =
+[[2.3333e+00 1.6321e-09]
+ [1.5804e-09 2.3333e+00]]
+ 
+ spec(redK) = [2.3333 2.3333]
+ 
+ redA = M A M^+ =
+[[0.656  1.6773]
+ [1.656  0.6773]]
+ 
+ spec(redA) = [-1.      2.3333]
+ 
+ snmf_frobenius_error = 5.737029090881407e-09
+ 
+ onmf_frobenius_error = 9.799798302837484e-08
+ 
+ onmf_ortho_error = 0.00946584885016627
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.1107
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.1564
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = W -> T2 = A -> T3 = K------------------------ 
+
+ 
+ V_T1 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ V_T2 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ V_T3 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ M = [[0.29   0.0433 0.29   0.0433 0.29   0.0433]
+ [0.0958 0.2376 0.0958 0.2376 0.0958 0.2376]]
+ 
+ m = [0.1929 0.1404 0.1929 0.1404 0.1929 0.1404]
+ 
+ redW = M W M^+ =
+[[ 0.2256 -0.0775]
+ [ 0.1405 -0.2256]]
+ 
+ spec(redW) = [ 0.2 -0.2]
+ 
+ redK = M K M^+ =
+[[2.3333e+00 0.0000e+00]
+ [4.4409e-16 2.3333e+00]]
+ 
+ spec(redK) = [2.3333 2.3333]
+ 
+ redA = M A M^+ =
+[[0.2165 2.1169]
+ [1.2165 1.1169]]
+ 
+ spec(redA) = [-1.      2.3333]
+ 
+ snmf_frobenius_error = None
+ 
+ onmf_frobenius_error = 2.9470666643065688e-05
+ 
+ onmf_ortho_error = 0.7165482662712828
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.0918
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.1137
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = K -> T2 = W -> T3 = A------------------------ 
+
+ 
+ V_T1 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ V_T2 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ V_T3 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ M = [[1.0271e-06 1.0271e-06 5.0000e-01 5.0000e-01 1.0271e-06 0.0000e+00]
+ [3.3017e-01 3.3017e-01 4.7476e-03 4.7476e-03 3.3017e-01 0.0000e+00]]
+ 
+ m = [0.1651 0.1651 0.2524 0.2524 0.1651 0.    ]
+ 
+ redW = M W M^+ =
+[[-1.9693e-09  2.0739e-07]
+ [-6.3302e-04  6.6667e-02]]
+ 
+ spec(redW) = [-6.5364e-14  6.6667e-02]
+ 
+ redK = M K M^+ =
+[[ 3.0000e+00 -3.1108e-06]
+ [ 9.4953e-03  2.0000e+00]]
+ 
+ spec(redK) = [3. 2.]
+ 
+ redA = M A M^+ =
+[[0.9856 1.5144]
+ [0.9935 0.681 ]]
+ 
+ spec(redA) = [ 2.0694 -0.4027]
+ 
+ snmf_frobenius_error = 5.699071983349995e-09
+ 
+ onmf_frobenius_error = 1.8738475346514394e-07
+ 
+ onmf_ortho_error = 0.016606335058856163
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0513
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.0
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.2019
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = K -> T2 = A -> T3 = W------------------------ 
+
+ 
+ V_T1 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ V_T2 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ V_T3 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ M = [[0.1069 0.1069 0.3397 0.3397 0.1069 0.    ]
+ [0.2331 0.2331 0.1503 0.1503 0.2331 0.    ]]
+ 
+ m = [0.17  0.17  0.245 0.245 0.17  0.   ]
+ 
+ redW = M W M^+ =
+[[-0.017   0.0383]
+ [-0.037   0.0836]]
+ 
+ spec(redW) = [2.7756e-17 6.6667e-02]
+ 
+ redK = M K M^+ =
+[[ 3.2546 -0.5752]
+ [ 0.5552  1.7454]]
+ 
+ spec(redK) = [3. 2.]
+ 
+ redA = M A M^+ =
+[[0.8677 1.3651]
+ [1.1183 0.799 ]]
+ 
+ spec(redA) = [ 2.0694 -0.4027]
+ 
+ snmf_frobenius_error = None
+ 
+ onmf_frobenius_error = 9.84027912010628e-06
+ 
+ onmf_ortho_error = 1.064785819804991
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0388
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.0
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.1878
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = A -> T2 = W -> T3 = K------------------------ 
+
+ 
+ V_T1 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ V_T2 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ V_T3 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ M = [[0.0174 0.0078 0.1157 0.3066 0.2662 0.2863]
+ [0.2416 0.2483 0.2745 0.1339 0.0579 0.0437]]
+ 
+ m = [0.1295 0.1281 0.1951 0.2203 0.1621 0.165 ]
+ 
+ redW = M W M^+ =
+[[-0.0859  0.0382]
+ [-0.03    0.0655]]
+ 
+ spec(redW) = [-0.0779  0.0575]
+ 
+ redK = M K M^+ =
+[[2.3446 0.1646]
+ [0.1305 2.363 ]]
+ 
+ spec(redK) = [2.2069 2.5007]
+ 
+ redA = M A M^+ =
+[[2.0171 0.399 ]
+ [0.2923 2.1206]]
+ 
+ spec(redA) = [1.7234 2.4142]
+ 
+ snmf_frobenius_error = None
+ 
+ onmf_frobenius_error = 0.000783848836252618
+ 
+ onmf_ortho_error = 0.6333235923704781
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.0375
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.095
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.0162
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
+
+---------------------- T1 = A -> T2 = K -> T3 = W------------------------ 
+
+ 
+ V_T1 = [[ 0.3536  0.3536  0.5     0.5     0.3536  0.3536]
+ [-0.444  -0.444  -0.3251  0.3251  0.444   0.444 ]]
+ 
+ V_T2 = [[0.5774 0.5774 0.     0.     0.5774 0.    ]
+ [0.     0.     0.7071 0.7071 0.     0.    ]]
+ 
+ V_T3 = [[0.5774 0.     0.5774 0.     0.5774 0.    ]
+ [0.     0.5774 0.     0.5774 0.     0.5774]]
+ 
+ M = [[0.0476 0.0397 0.1307 0.2853 0.2421 0.2546]
+ [0.26   0.2648 0.2927 0.1204 0.0349 0.0273]]
+ 
+ m = [0.1538 0.1522 0.2117 0.2029 0.1385 0.1409]
+ 
+ redW = M W M^+ =
+[[-0.0839  0.0449]
+ [-0.0283  0.0707]]
+ 
+ spec(redW) = [-0.0752  0.062 ]
+ 
+ redK = M K M^+ =
+[[2.3721 0.1307]
+ [0.1507 2.3479]]
+ 
+ spec(redK) = [2.5009 2.2191]
+ 
+ redA = M A M^+ =
+[[2.091  0.3231]
+ [0.3625 2.0516]]
+ 
+ spec(redA) = [2.4141 1.7285]
+ 
+ snmf_frobenius_error = None
+ 
+ onmf_frobenius_error = 0.0003604176349881863
+ 
+ onmf_ortho_error = 0.6738596360550945
+ 
+ np.sqrt(||M W - M W M^+M ||^2) = 0.037
+
+ 
+ np.sqrt(||M K - M K M^+M ||^2) = 0.0943
+
+ 
+ np.sqrt(||M A - M A M^+M ||^2) = 0.0105
+
+ 
+ reduction_matrix_has_rank_n = True
+ 
+ reduction_matrix_is_normalized = True
+ 
+ reduction_matrix_is_positive = True
+ 
+ global reduction_matrix_is_normalized = True
+ 
+ global reduction_matrix_is_positive = True
+ ------------------------------------------------------------------------------
+
+
+
