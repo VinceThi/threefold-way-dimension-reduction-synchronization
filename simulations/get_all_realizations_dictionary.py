@@ -1,6 +1,6 @@
 import networkx as nx
 import time
-from synch_predictions.graphs.get_reduction_matrix_and_characteristics import \
+from graphs.get_reduction_matrix_and_characteristics import \
     get_realizations_dictionary, get_omega_realizations
 import json
 import numpy as np
@@ -57,7 +57,7 @@ if parameter_realizations:
                                      "graph_str": graph_str,
                                      "number_realizations": nb_realizations,
                                      "omega_mean": mean,
-                                     "omega_variance": variance,
+                                     "omega_std": std,
                                      "timestr": timestr}
 else:
     if dynamics_str == "theta":

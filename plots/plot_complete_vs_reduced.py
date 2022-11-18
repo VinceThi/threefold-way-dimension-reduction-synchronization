@@ -47,7 +47,7 @@ def left_bottom_axis_settings(ax, xlabel, ylabel, xlim, ylim, x_coord, y_coord,
 def plot_transitions_complete_vs_reduced(ax, x_array, r_matrix, R_matrix,
                                          complete_color, reduced_color,
                                          alpha, marker, s, linewidth,
-                                         number_realizations):
+                                         number_realizations=100):
     mean_r = np.mean(r_matrix, axis=0)
     mean_R = np.mean(R_matrix, axis=0)
     std_r = np.std(r_matrix, axis=0)

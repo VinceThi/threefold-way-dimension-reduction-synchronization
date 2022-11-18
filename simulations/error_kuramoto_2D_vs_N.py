@@ -1,4 +1,4 @@
-from synch_predictions.dynamics.get_reduction_errors import *
+from dynamics.get_reduction_errors import *
 import numpy as np
 import json
 import tkinter.simpledialog

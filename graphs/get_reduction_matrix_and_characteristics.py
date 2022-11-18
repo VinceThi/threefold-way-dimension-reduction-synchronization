@@ -3,8 +3,8 @@
 
 from numpy.linalg import pinv, det, eig
 import numpy as np
-from synch_predictions.graphs.matrix_factorization_pymf_snmf import *
-from synch_predictions.graphs.graph_spectrum import get_eigenvectors_matrix
+from graphs.matrix_factorization_pymf_snmf import *
+from graphs.graph_spectrum import get_eigenvectors_matrix
 import json
 import tkinter.simpledialog
 from tkinter import messagebox

@@ -1,8 +1,8 @@
-from synch_predictions.dynamics.integrate import *
+from dynamics.integrate import *
 import matplotlib.pyplot as plt
-from synch_predictions.dynamics.dynamics import *
-from synch_predictions.dynamics.reduced_dynamics import *
-from synch_predictions.graphs.get_reduction_matrix_and_characteristics import *
+from dynamics.dynamics import *
+from dynamics.reduced_dynamics import *
+from graphs.get_reduction_matrix_and_characteristics import *
 import numpy as np
 from numpy.linalg import multi_dot, pinv
 import networkx as nx

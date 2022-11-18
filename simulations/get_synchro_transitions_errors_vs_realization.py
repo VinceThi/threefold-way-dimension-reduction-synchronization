@@ -1,6 +1,6 @@
-from synch_predictions.graphs.get_reduction_matrix_and_characteristics import *
+from graphs.get_reduction_matrix_and_characteristics import *
 import json
-from synch_predictions.graphs.special_graphs import mean_SBM
+from graphs.special_graphs import mean_SBM
 import matplotlib.pyplot as plt
 
 setup_str_list = ["bipartite_winfree", "bipartite_kuramoto",

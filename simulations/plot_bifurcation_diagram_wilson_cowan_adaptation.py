@@ -1,6 +1,6 @@
-from synch_predictions.plots.plots_setup import *
-from synch_predictions.graphs.get_reduction_matrix_and_characteristics import *
-from synch_predictions.plots.plot_spectrum import *
+from plots.plots_setup import *
+from graphs.get_reduction_matrix_and_characteristics import *
+from plots.plot_spectrum import *
 # from mpl_toolkits.axes_grid1 import make_axes_locatable
 import time
 

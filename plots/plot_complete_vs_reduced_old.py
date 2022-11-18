@@ -2,7 +2,7 @@
 # @author: Vincent Thibeault
 
 
-from synch_predictions.plots.plots_setup import *
+from plots.plots_setup import *
 
 
 def plot_complete_vs_reduced_vs_time(time_list, r1, r2, R1, R2):

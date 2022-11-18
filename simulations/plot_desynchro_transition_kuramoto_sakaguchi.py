@@ -1,5 +1,5 @@
-from synch_predictions.plots.plot_complete_vs_reduced import *
-from synch_predictions.simulations.data_synchro_transition_kuramoto_sakaguchi\
+from plots.plot_complete_vs_reduced import *
+from simulations.data_synchro_transition_kuramoto_sakaguchi\
     import *
 import matplotlib.pyplot as plt
 import numpy as np
@@ -28,32 +28,32 @@ nb_instances = 1
 alpha_list = np.linspace(0.6, 1.2, 100)
 
 
-def give_alpha_critical(alpha_list, Rpi_reduced_vs_alpha):
+def give_alpha_critical(alphal, Rpi_reduced_vs_alpha):
     """
 
     :param Rpi_reduced_vs_alpha: list of mean Rpi (i=1 or 2 (1st star or 2nd),
                                                    p for periphery,
                                                    R for the synchronization
                                                    parameter)
-    :param alpha_list: The alpha list associated to Rpi_reduced_vs_alpha
+    :param alphal: The list of alpha values associated to Rpi_reduced_vs_alpha
     :return: critical_alpha
     """
     # First method
     i = 0
     tolerance = 0.001
+    critical_alpha = None
     for Rp1 in Rpi_reduced_vs_alpha:
         if np.abs(1-Rp1) < tolerance:
             i += 1
         else:
-            critical_alpha = (alpha_list[i] + alpha_list[i-1])/2
+            critical_alpha = (alphal[i] + alphal[i-1])/2
 
     # Second method
-    delta_alpha = alpha_list[1]-alpha_list[0]
+    delta_alpha = alphal[1]-alphal[0]
     derivative_dRpidalpha = np.diff(Rpi_reduced_vs_alpha)/delta_alpha
     index_min_value_derivative = np.argmin(derivative_dRpidalpha)
-    critical_alpha_derivative = (alpha_list[index_min_value_derivative]
-                                 + alpha_list[index_min_value_derivative-1])/2
-    # print(critical_alpha, critical_alpha_derivative)
+    critical_alpha_derivative = (alphal[index_min_value_derivative]
+                                 + alphal[index_min_value_derivative-1])/2
 
     # We have two critical values obtained with two different methods,
     # are they similar ? (because they must be)
@@ -150,7 +150,7 @@ left_bottom_axis_settings(ax2, "$\\alpha$", "$R_{\\mu}$", x_lim, y_lim,
 # 
 # 
 # axins3 = inset_axes(ax2, width="50%", height="50%",
-#                     bbox_to_anchor=(-0.08, .15, .5, .5),   # (.5, .55, .5, .5),
+#                     bbox_to_anchor=(-0.08, .15, .5, .5), # (.5, .55, .5, .5),
 #                     bbox_transform=ax2.transAxes, loc=4)
 # plot_transitions_complete_vs_reduced(np.linspace(0.01, 1, 50),
 #                                      r1_ks_matrix, R1_ks_matrix,

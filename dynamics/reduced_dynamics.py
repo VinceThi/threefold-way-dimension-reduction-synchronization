@@ -41,6 +41,7 @@ def reduced_kuramoto_complex(t, Z, MAMp, MWMp, MKMp, sigma, N, kappa, Omega):
 def reduced_kuramoto_sakaguchi_complex(t, Z, MAMp, MWMp, MKMp,
                                        sigma, N, kappa, Omega, alpha):
     """
+    # TODO I don't think it's good here ...
     Reduced Kuramoto dynamics
     :param t:
     :param Z:

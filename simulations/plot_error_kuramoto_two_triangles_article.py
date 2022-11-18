@@ -1,11 +1,11 @@
-from synch_predictions.dynamics.get_reduction_errors import *
-# from synch_predictions.plots.plots_setup import *
+from dynamics.get_reduction_errors import *
+# from plots.plots_setup import *
 import matplotlib.pyplot as plt
 import json
 import numpy as np
 
 first_community_color = "#2171b5"
-second_commuplot_error_kuramoto_two_triangles_article.pynity_color = "#f16913"
+second_community_color = "#f16913"
 reduced_first_community_color = "#9ecae1"
 reduced_second_community_color = "#fdd0a2"
 reduced_third_community_color = "#a1d99b"
@@ -39,13 +39,15 @@ with open('data/kuramoto/errors_kuramoto/2019_09_25_20h54min21sec_verification'
 #     R_dictionary_3D = json.load(json_data)
 
 # n=3, K  et  W -> A -> K
-# with open('data/kuramoto/errors_kuramoto/2020_01_16_16h02min58sec_first'
+# with open('data/kuramoto/errors_kuramoto/'
+#           '2020_01_16_16h02min58sec_first'
 #           '_three_target_data_parameters_dictionary_for_error_kuramoto_3D.json'
 #           ) as json_data:
 #     R_dictionary_3D = json.load(json_data)
 
 # n=3, K   et   W -> A -> K, other procedure
-# with open('data/kuramoto/errors_kuramoto/2020_01_16_19h35min48sec_three_target'
+# with open('data/kuramoto/errors_kuramoto/'
+#           '2020_01_16_19h35min48sec_three_target'
 #           '_other_procedure_data_parameters_dictionary'
 #           '_for_error_kuramoto_3D.json'
 #           ) as json_data:

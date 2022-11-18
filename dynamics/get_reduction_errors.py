@@ -1,7 +1,7 @@
-from synch_predictions.dynamics.integrate import *
-from synch_predictions.dynamics.dynamics import *
-from synch_predictions.dynamics.reduced_dynamics import *
-from synch_predictions.graphs.graph_spectrum import *
+from dynamics.integrate import *
+from dynamics.dynamics import *
+from dynamics.reduced_dynamics import *
+from graphs.graph_spectrum import *
 import numpy as np
 from numpy.linalg import multi_dot, pinv
 import networkx as nx

@@ -3,8 +3,7 @@ import matplotlib
 import time as timer
 import numpy as np
 import networkx as nx
-from synch_predictions.graphs.special_graphs import\
-    two_star_graph_adjacency_matrix
+# from graphs.special_graphs import two_star_graph_adjacency_matrix
 from scipy.sparse.linalg import eigs
 
 
@@ -207,12 +206,12 @@ if __name__ == "__main__":
     # plt.xlim([-2, 3])
 
     ax4 = plt.subplot(414)
-    A_TS = two_star_graph_adjacency_matrix(sizes, [[1, 1], [1, 1]])
-    plot_spectrum(ax4, A_TS, 1, vals=[],
-                  axvline_color="#2171b5", bar_color="#b2b2b2",
-                  normed=True, xlabel="$\\lambda$", ylabel="",
-                  label_fontsize=13, nbins=nbins, labelsize=13)
-    # plt.xlim([-15, 15])
+    # A_TS = two_star_graph_adjacency_matrix(sizes, [[1, 1], [1, 1]])
+    # plot_spectrum(ax4, A_TS, 1, vals=[],
+    #               axvline_color="#2171b5", bar_color="#b2b2b2",
+    #               normed=True, xlabel="$\\lambda$", ylabel="",
+    #               label_fontsize=13, nbins=nbins, labelsize=13)
+    # # plt.xlim([-15, 15])
 
     plt.tight_layout()
 

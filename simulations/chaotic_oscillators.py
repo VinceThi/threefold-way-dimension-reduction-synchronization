@@ -1,9 +1,9 @@
-from synch_predictions.dynamics.integrate import *
-from synch_predictions.dynamics.dynamics import *
-from synch_predictions.dynamics.reduced_dynamics import *
-from synch_predictions.plots.plots_setup import *
-from synch_predictions.graphs.special_graphs import *
-from synch_predictions.graphs.get_reduction_matrix_and_characteristics import *
+from dynamics.integrate import *
+from dynamics.dynamics import *
+from dynamics.reduced_dynamics import *
+from plots.plots_setup import *
+from graphs.special_graphs import *
+from graphs.get_reduction_matrix_and_characteristics import *
 from tqdm import tqdm
 
 graph_str = "mean_SBM"        # "star", "SBM", or "mean_SBM"

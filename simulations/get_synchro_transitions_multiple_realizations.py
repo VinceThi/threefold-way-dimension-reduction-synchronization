@@ -1,5 +1,5 @@
-from synch_predictions.dynamics.get_synchro_transition import *
-from synch_predictions.graphs.get_reduction_matrix_and_characteristics import *
+from dynamics.get_synchro_transition import *
+from graphs.get_reduction_matrix_and_characteristics import *
 import json
 import time
 

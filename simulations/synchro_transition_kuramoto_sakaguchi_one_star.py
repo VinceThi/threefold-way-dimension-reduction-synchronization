@@ -1,7 +1,7 @@
 # Predictions for the Kuramoto dynamics on a star graphs when the core has one
 # natural frequency and the periphery nodes have all the same natural frequency
 
-from synch_predictions.dynamics.get_synchro_transition import *
+from dynamics.get_synchro_transition import *
 import numpy as np
 import json
 import time

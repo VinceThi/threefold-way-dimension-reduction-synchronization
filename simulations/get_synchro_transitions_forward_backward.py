@@ -1,6 +1,6 @@
-from synch_predictions.dynamics.get_synchro_transition import *
-from synch_predictions.graphs.get_reduction_matrix_and_characteristics import *
-from synch_predictions.plots.plot_complete_vs_reduced import *
+from dynamics.get_synchro_transition import *
+from graphs.get_reduction_matrix_and_characteristics import *
+from plots.plot_complete_vs_reduced import *
 import matplotlib.pyplot as plt
 import json
 import time

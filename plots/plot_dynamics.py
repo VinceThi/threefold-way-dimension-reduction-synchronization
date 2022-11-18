@@ -2,7 +2,7 @@
 # @author: Vincent Thibeault
 
 
-from synch_predictions.plots.plots_setup import *
+from plots.plots_setup import *
 
 
 def plot_dynamics_vs_time(time_list, temporal_series, series_label="",

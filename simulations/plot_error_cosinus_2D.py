@@ -1,4 +1,4 @@
-from synch_predictions.dynamics.get_reduction_errors import *
+from dynamics.get_reduction_errors import *
 # from synch_predictions.plots.plots_setup import *
 import matplotlib.pyplot as plt
 import json
