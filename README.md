@@ -28,3 +28,7 @@ Figure 13 of the paper is obtained from the Python script "simulations/synchro_t
 
 "simulations/synchro_transition_kuramoto_reduction_different_n.py" is to answer to the
 question 2 of the reviewer. See also "get_M_for_each_n.py" in graphs/two_triangles
+
+The path to access the data in the scripts have to be modified by the user.
+
+Write at vincent.thibeault.1@ulaval.ca for more information.
