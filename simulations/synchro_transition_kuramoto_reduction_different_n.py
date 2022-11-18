@@ -1,9 +1,9 @@
-from synch_predictions.dynamics.get_synchro_transition import *
-from synch_predictions.graphs.special_graphs import \
+from dynamics.get_synchro_transition import *
+from graphs.special_graphs import \
     two_triangles_graph_adjacency_matrix
-from synch_predictions.graphs.get_reduction_matrix_and_characteristics\
+from graphs.get_reduction_matrix_and_characteristics\
     import rmse
-from synch_predictions.plots.plots_setup import *
+from plots.plots_setup import *
 import json
 import time
 

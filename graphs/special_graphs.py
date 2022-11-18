@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# @author: Vincent Thibeault
+
 import networkx as nx
 import numpy as np
 

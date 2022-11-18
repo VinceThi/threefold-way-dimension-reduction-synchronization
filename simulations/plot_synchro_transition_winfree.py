@@ -1,5 +1,5 @@
-from synch_predictions.plots.plot_complete_vs_reduced import *
-from synch_predictions.simulations.data_synchro_transition_winfree import *
+from plots.plot_complete_vs_reduced import *
+from simulations.data_synchro_transition_winfree import *
 import matplotlib.pyplot as plt
 import numpy as np
 import tkinter.simpledialog

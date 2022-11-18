@@ -1,9 +1,9 @@
-from synch_predictions.dynamics.integrate import *
-from synch_predictions.dynamics.dynamics import *
-from synch_predictions.dynamics.reduced_dynamics import *
-from synch_predictions.graphs.graph_spectrum import *
-# from synch_predictions.plots.plot_complete_vs_reduced import *
-from synch_predictions.plots.plot_dynamics import *
+from dynamics.integrate import *
+from dynamics.dynamics import *
+from dynamics.reduced_dynamics import *
+from graphs.graph_spectrum import *
+# from plots.plot_complete_vs_reduced import *
+from plots.plot_dynamics import *
 import matplotlib
 import numpy as np
 from numpy.linalg import multi_dot, pinv
@@ -128,7 +128,7 @@ omega_std = 0.05
 
 
 nb_instances = 20
-p_array = np.linspace(0.01, 0.4, 100)
+p_array = np.linspace(0.01, 0.4, 10)
 
 # Get result
 r_list, R_list = get_synchro_transition_kuramoto(p_array, sizes, nb_instances,

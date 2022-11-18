@@ -1,5 +1,5 @@
-from synch_predictions.dynamics.get_synchro_transition import *
-from synch_predictions.plots.plot_dynamics import *
+from dynamics.get_synchro_transition import *
+from plots.plot_dynamics import *
 # from synch_predictions.simulations.data_synchro_transition_winfree import *
 import matplotlib
 import numpy as np

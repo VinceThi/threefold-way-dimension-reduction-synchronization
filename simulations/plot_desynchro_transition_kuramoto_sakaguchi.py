@@ -9,6 +9,9 @@ import time
 # from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
 
+# TODO one must define rp1_1, rp1_2, rp2_2, Rp1_1, Rp1_2, Rp2_2
+# TODO and the import the script.
+
 first_community_color = "#2171b5"
 reduced_first_community_color = "#9ecae1"
 second_community_color = "#f16913"

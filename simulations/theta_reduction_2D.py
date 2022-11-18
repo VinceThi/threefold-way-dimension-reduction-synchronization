@@ -2,16 +2,15 @@
 # @author: Vincent Thibeault
 
 
-from synch_predictions.dynamics.integrate import *
-from synch_predictions.dynamics.dynamics import *
-from synch_predictions.dynamics.reduced_dynamics import *
-from synch_predictions.graphs.graph_spectrum import *
-from synch_predictions.plots.plot_complete_vs_reduced_old import *
-from synch_predictions.plots.plots_setup import * 
+from dynamics.integrate import *
+from dynamics.dynamics import *
+from dynamics.reduced_dynamics import *
+from graphs.graph_spectrum import *
+from plots.plot_complete_vs_reduced_old import *
+from plots.plots_setup import *
 # from synchro_integration import give_pq
 import numpy as np
 from numpy.linalg import multi_dot, pinv
-import networkx as nx
 
 
 # Time parameters

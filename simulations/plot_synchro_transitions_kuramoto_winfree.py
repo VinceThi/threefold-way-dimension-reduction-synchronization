@@ -1,6 +1,6 @@
-from synch_predictions.plots.plot_dynamics import *
-from synch_predictions.simulations.data_synchro_transition_winfree import *
-from synch_predictions.simulations.data_synchro_transition_kuramoto\
+from plots.plot_dynamics import *
+from simulations.data_synchro_transition_winfree import *
+from simulations.data_synchro_transition_kuramoto\
     import *
 import matplotlib
 import tkinter.simpledialog
@@ -18,12 +18,14 @@ fontsize_legend = 18
 labelsize = 18
 linewidth = 2
 
+
 def plot_complete_vs_reduced_vs_pout(p_out_array, complete_R_array,
                                      reduced_R_array, complete_color="#2171b5",
                                      reduced_color="#9ecae1", fontsize = 18,
                                      fontsize_legend = 18,labelsize = 18,
                                      linewidth=2):
     return
+
 
 p_array = np.linspace(0.001, 1, 50)  # p_out
 

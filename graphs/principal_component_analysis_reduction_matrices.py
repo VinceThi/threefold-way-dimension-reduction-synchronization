@@ -1,5 +1,5 @@
-from synch_predictions.graphs.get_reduction_matrix_and_characteristics import *
-from synch_predictions.plots.plot_principal_component_analysis import *
+from graphs.get_reduction_matrix_and_characteristics import *
+from plots.plot_principal_component_analysis import *
 import json
 # import umap
 from sklearn.decomposition import PCA

@@ -1,5 +1,5 @@
-from synch_predictions.dynamics.get_reduction_errors import *
-# from synch_predictions.plots.plots_setup import *
+from dynamics.get_reduction_errors import *
+# from plots.plots_setup import *
 import matplotlib.pyplot as plt
 import json
 import numpy as np

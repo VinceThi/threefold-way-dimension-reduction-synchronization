@@ -1,5 +1,5 @@
 # from synch_predictions.plots.plot_dynamics import *
-from synch_predictions.simulations.data_synchro_transition_theta import *
+from simulations.data_synchro_transition_theta import *
 # import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
@@ -51,9 +51,9 @@ ax = plt.subplot(111)
 # plt.plot(p_array, mean_R_Ip1, color="#9e9ac8", linewidth=linewidth,
 #          linestyle='-')
 
-#plt.fill_between(p_array, mean_r_I05 - std_r_I05, mean_r_I05 + std_r_I05,
+# plt.fill_between(p_array, mean_r_I05 - std_r_I05, mean_r_I05 + std_r_I05,
 #                 color="#bcbddc", alpha=alpha)
-#plt.plot(p_array, mean_r_I05, color="#807dba",
+# plt.plot(p_array, mean_r_I05, color="#807dba",
 #         linewidth=linewidth, label=r"$I = -0.5$")
 for i in range(0, 10):
     if i == 0:

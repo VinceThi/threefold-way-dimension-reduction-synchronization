@@ -115,16 +115,16 @@ def reduced_theta_R_Phi_2D(t, W, redA, I_array, sigma, N):
     return np.concatenate([dRdt, dPhidt])
 
 
-# def reduced_theta(t, Z, redA, Iext, sigma, N, redK, hatredA, hatredK):
-#     return -1j/2*(Z-1)**2 + 1j/2*(Z+1)**2*Iext \
-#            + 1j*sigma/(2*N)*(Z+1)**2*np.dot(redA, np.ones(len(Z))
-#                                             + 0.5*Z + 0.5*np.conj(Z)) \
-#            + 1j*sigma/N*Z*(Z+1)*np.dot(np.abs(hatredK)
-#                                        - np.abs(redK), np.ones(len(Z))
-#                                        + 0.5*Z + 0.5*np.conj(Z)) \
-#            + 1j*sigma/(4*N)*(Z+1)**2*np.dot(np.abs(hatredA)-np.abs(redA),
-#                                             Z*(1 - np.conj(Z)**2))
-#
+def reduced_theta(t, Z, redA, Iext, sigma, N, redK, hatredA, hatredK):
+    return -1j/2*(Z-1)**2 + 1j/2*(Z+1)**2*Iext \
+           + 1j*sigma/(2*N)*(Z+1)**2*np.dot(redA, np.ones(len(Z))
+                                            + 0.5*Z + 0.5*np.conj(Z)) \
+           + 1j*sigma/N*Z*(Z+1)*np.dot(np.abs(hatredK)
+                                       - np.abs(redK), np.ones(len(Z))
+                                       + 0.5*Z + 0.5*np.conj(Z)) \
+           + 1j*sigma/(4*N)*(Z+1)**2*np.dot(np.abs(hatredA)-np.abs(redA),
+                                            Z*(1 - np.conj(Z)**2))
+
 """"""
 
 # ---------------------------- Winfree ----------------------------------------

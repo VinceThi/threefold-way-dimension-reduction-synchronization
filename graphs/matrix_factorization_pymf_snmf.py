@@ -9,7 +9,7 @@ PyMF Semi Non-negative Matrix Factorization.
 IEEE Trans. on Pattern Analysis and Machine Intelligence 32(1), 45-55.
 """
 import numpy as np
-from synch_predictions.graphs.matrix_factorization_pymf_base import PyMFBase
+from graphs.matrix_factorization_pymf_base import PyMFBase
 
 __all__ = ["SNMF"]
 

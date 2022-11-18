@@ -2,9 +2,8 @@
 # @author: Vincent Thibeault
 
 
-from synchro_integration import give_pq
-import numpy as np
-from synch_predictions.graphs.graph_spectrum import *
+# from synchro_integration import give_pq
+from graphs.graph_spectrum import *
 import networkx as nx
 import matplotlib.pyplot as plt
 from numpy.linalg import pinv
@@ -23,9 +22,9 @@ pin = 0
 pout = 0.1
 pq = [[pin, pout], [pout, pin]]
 
-############################### Adjacency matrix  #############################
+# --------------------------- Adjacency matrix  -------------------------------
 A = nx.to_numpy_array(nx.stochastic_block_model(sizes, pq))
-#"""
+# """
 V = get_eigenvectors_matrix(A, 2)
 
 # plt.plot(V[0])
@@ -68,9 +67,9 @@ cbar_ax = fig.add_axes([0.85, 0.15, 0.05, 0.7])
 fig.colorbar(im, cax=cbar_ax)
 
 plt.show()
-#"""
+# """
 
-############################### Laplacian matrix  #############################
+# ------------------------ Laplacian matrix  ---------------------------------
 """
 k_array = np.dot(A, np.ones(len(A[:, 0])).transpose())
 K = np.diag(k_array)

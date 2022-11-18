@@ -1,5 +1,5 @@
-from synch_predictions.dynamics.get_synchro_transition import *
-from synch_predictions.graphs.special_graphs import \
+from dynamics.get_synchro_transition import *
+from graphs.special_graphs import \
     two_triangles_graph_adjacency_matrix
 import json
 import tkinter.simpledialog

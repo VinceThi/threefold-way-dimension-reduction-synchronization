@@ -4,7 +4,7 @@ import json
 import time
 
 save_data = False
-plot_time_series = True
+plot_time_series = False
 dynamics_str = "kuramoto"  # "kuramoto" or "winfree" or "theta"
 graph_str = "bipartite"    # "bipartite" or "SBM"
 n = 2
@@ -21,18 +21,18 @@ averaging = 5
 realizations_dictionary_str = f"{graph_str}_{dynamics_str}"
 realizations_dictionary_path = \
     get_realizations_dictionary_absolute_path(realizations_dictionary_str)
-with open(f'C:/Users/thivi/Documents/GitHub/network-synch/'
-          f'synch_predictions/simulations/data/'
-          f'synchro_transitions_multiple_realizations/'
+with open(f'C:/Users/thivi/Documents/GitHub/'
+          f'threefold-way-dimension-reduction-synchronization/'
+          f'simulations/data/synchro_transitions_multiple_realizations/'
           f'{realizations_dictionary_path}.json') as json_data:
     realizations_dictionary = json.load(json_data)
 infos_realizations_dictionary_str = f"{graph_str}_{dynamics_str}"
 infos_realizations_dictionary_path = \
     get_infos_realizations_dictionary_absolute_path(
         infos_realizations_dictionary_str)
-with open(f'C:/Users/thivi/Documents/GitHub/network-synch/'
-          f'synch_predictions/simulations/data/'
-          f'synchro_transitions_multiple_realizations/'
+with open(f'C:/Users/thivi/Documents/GitHub/'
+          f'threefold-way-dimension-reduction-synchronization/'
+          f'simulations/data/synchro_transitions_multiple_realizations/'
           f'{infos_realizations_dictionary_path}.json') as json_data:
     infos_realizations_dictionary = json.load(json_data)
 
@@ -85,9 +85,9 @@ timestr = infos_realizations_dictionary["timestr"]
 
 if save_data:
 
-    with open(f'C:/Users/thivi/Documents/GitHub/network-synch/'
-              f'synch_predictions/simulations/data/'
-              f'synchro_transitions_multiple_realizations/'
+    with open(f'C:/Users/thivi/Documents/GitHub/'
+              f'threefold-way-dimension-reduction-synchronization/'
+              f'simulations/data/synchro_transitions_multiple_realizations/'
               f'{timestr}_multiple_synchro_transition'
               f'_dictionary_{dynamics_str}_on_{graph_str}_{n}D'  # _naive'
               f'_{time.strftime("%Y_%m_%d_%Hh%Mmin%Ssec")}'

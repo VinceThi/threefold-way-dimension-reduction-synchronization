@@ -2,6 +2,8 @@ Paper = V. Thibeault et al.,
         "Threefold approach for reducing the dimension of dynamics on networks:
          an application to synchronization", 2020.
 
+The code is not cleaned and the paths to access the data have to be changed
+by the user.
 
 Figures 6 and 7 of the paper are obtained with the Python script "synchro_transition_kuramoto_reduction_multiple_targets.py".
 

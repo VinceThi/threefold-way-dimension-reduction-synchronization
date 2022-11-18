@@ -1,4 +1,4 @@
-from synch_predictions.dynamics.get_synchro_transition import *
+from dynamics.get_synchro_transition import *
 import json
 # import tkinter.simpledialog
 # from tkinter import messagebox
@@ -77,104 +77,117 @@ time_list = np.linspace(t0, t1, int(t1 / dt))
 #                 "synch_predictions/graphs/two_triangles/CVM_data/" \
 #                 "2020_10_05_01h44min54sec_CVM_dictionary_two_triangles" \
 #                 "_2D_V_K_one_less_node_new_onmf.json"
-CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-                "synch_predictions/graphs/two_triangles/CVM_data/" \
+CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+                "threefold-way-dimension-reduction-synchronization/" \
+                "graphs/two_triangles/CVM_data/" \
                 "2020_10_09_17h12min56sec_CVM_dictionary_two_triangles" \
                 "_2D_V_K_one_less_node_new_onmf_normalized_errors.json"
 sigma_array = np.array([0] + list(np.linspace(0.1, 4, 99)))  
 
 """ Two-triangles, n = 3 """
-# CVM_dict_path = 'C:/Users/thivi/Documents/GitHub/network-synch/' \
-#                 'synch_predictions/graphs/two_triangles/CVM_data/' \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
+#                 "graphs/two_triangles/CVM_data/" \
 #                 '2020_01_20_21h22min31sec_CVM_two_triangles' \
 #                 '_3D_dictionary_V0_V1_V3.json'
 # sigma_array = np.linspace(0.01, 8, 500)
-# CVM_dict_path = 'C:/Users/thivi/Documents/GitHub/network-synch/' \
-#                 'synch_predictions/graphs/two_triangles/CVM_data/' \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
+#                 "graphs/two_triangles/CVM_data/" \
 #                 '2020_01_29_19h58min26sec_CVM_two_triangles_3D' \
 #                 '_dictionary_V0_V1_V3.json'
 # sigma_array = np.linspace(0.01, 8, 100)
-# CVM_dict_path = 'C:/Users/thivi/Documents/GitHub/network-synch/' \
-#                 'synch_predictions/graphs/two_triangles/CVM_data/' \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#               "threefold-way-dimension-reduction-synchronization/" \
+#               "graphs/two_triangles/CVM_data/" \
 #                 '2020_02_01_02h10min58sec_CVM_dictionary_two_triangles_3D' \
 #                 '_snmf_and_onmf.json'
 # sigma_array = np.linspace(0.01, 8, 100)
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/two_triangles/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
+#                 "graphs/two_triangles/CVM_data/" \
 #                 "2020_02_06_01h58min10sec_CVM_dictionary_two_triangles" \
 #                 "_3D_snmf_onmf_multiple_inits.json"
 # sigma_array = np.linspace(0.01, 8, 100)
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/two_triangles/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
+#                 "graphs/two_triangles/CVM_data/" \
 #                 "2020_02_10_16h45min42sec_CVM_dictionary_two_triangles_3D" \
 #                 "_V_K_one_less_node.json"
 # sigma_array = np.linspace(0.1, 4, 100)
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/two_triangles/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#               "threefold-way-dimension-reduction-synchronization/" \
+#               "graphs/two_triangles/CVM_data/" \
 #                 "2020_02_28_13h51min30sec_CVM_dictionary_two_triangles" \
 #                 "_3D_V_K_all_nodes_V_A_dominant_veps.json"
 # sigma_array = np.array([0] + list(np.linspace(0.1, 4, 99)))
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/two_triangles/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#               "threefold-way-dimension-reduction-synchronization/" \
+#               "graphs/two_triangles/CVM_data/" \
 #                 "2020_02_28_18h31min13sec_CVM_dictionary_two_triangles_3D" \
 #                 "_V_K_all_nodes_V_A_V0_V1_V3.json"
 # sigma_array = np.array([0] + list(np.linspace(0.1, 4, 99)))
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/two_triangles/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#               "threefold-way-dimension-reduction-synchronization/" \
+#               "graphs/two_triangles/CVM_data/" \
 #                 "2020_02_07_17h15min14sec_CVM_dictionary_two_triangles" \
 #                 "_3D_multiple_inits.json"
 # sigma_array = np.array([0] + list(np.linspace(0.1, 4, 99)))
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/two_triangles/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#               "threefold-way-dimension-reduction-synchronization/" \
+#               "graphs/two_triangles/CVM_data/" \
 #                 "2020_10_04_15h49min25sec_CVM_dictionary_two_triangles_3D" \
 #                 "_different_algorithm_onmf_normalized_errors.json"
 # sigma_array = np.array([0] + list(np.linspace(0.1, 4, 99)))
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/two_triangles/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#               "threefold-way-dimension-reduction-synchronization/" \
+#               "graphs/two_triangles/CVM_data/" \
 #                 "2020_10_04_20h35min26sec_CVM_dictionary_two_triangles" \
 #                 "_3D_V_A_is_V0_V1_V2_new_onmf.json"
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/two_triangles/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#               "threefold-way-dimension-reduction-synchronization/" \
+#               "graphs/two_triangles/CVM_data/" \
 #                 "2020_10_05_00h48min43sec_CVM_dictionary_two_triangles" \
 #                 "_3D_V_A_V0_V1_V2_V_K_full_new_onmf.json"
 # sigma_array = np.array([0] + list(np.linspace(0.1, 4, 99)))
 
+
 """ Small bipartite, n = 2 """
-# CVM_dict_path = 'C:/Users/thivi/Documents/GitHub/network-synch/' \
-#                 'synch_predictions/graphs/small_bipartite/CVM_data/' \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
 #                 '2020_01_21_16h33min34sec_CVM_small_bipartite_2D'  \
 #                 '_dictionary_V_K_neglects_node_1.json'
-# CVM_dict_path = 'C:/Users/thivi/Documents/GitHub/network-synch/' \
-#                 'synch_predictions/graphs/small_bipartite/CVM_data/' \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
 #                 '2020_01_21_22h05min41sec_CVM_small_bipartite_2D' \
 #                 '_dictionary_dominant_veps.json'
-# CVM_dict_path = 'C:/Users/thivi/Documents/GitHub/network-synch/' \
-#                 'synch_predictions/graphs/small_bipartite/CVM_data/' \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
 #                 '2020_01_23_14h41min07sec_CVM_small_bipartite_2D' \
 #                 '_dictionary_deg_freq.json'
-# CVM_dict_path = 'C:/Users/thivi/Documents/GitHub/network-synch/' \
-#                 'synch_predictions/graphs/small_bipartite/CVM_data/' \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
 #                 '2020_01_23_15h11min37sec_CVM_small_bipartite_2D' \
 #                 '_dictionary_other_deg_freq.json'
-# CVM_dict_path = 'C:/Users/thivi/Documents/GitHub/network-synch/' \
-#                 'synch_predictions/graphs/small_bipartite/CVM_data/' \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
 #                 '2020_01_29_23h36min49sec_CVM_dictionary_' \
 #                 'small_bipartite_2D_dom_eig.json'
-# CVM_dict_path = 'C:/Users/thivi/Documents/GitHub/network-synch/' \
-#                 'synch_predictions/graphs/small_bipartite/CVM_data/' \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
 #                 '2020_02_01_00h19min29sec_CVM_dictionary_small_bipartite' \
 #                 '_2D_snmf_and_onmf.json'
 # sigma_array = np.linspace(0.1, 4, 100)
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/small_bipartite/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
 #                 "2020_02_10_18h37min26sec_CVM_dictionary_small_bipartite_2D"\
 #                 "_freq_not_aligned.json"
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/small_bipartite/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
 #                 "2020_02_10_19h16min35sec_CVM_dictionary_small_bipartite_2D"\
 #                 "_freq_not_aligned_2.json"
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/small_bipartite/CVM_data/" \
+# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/" \
+#                 "threefold-way-dimension-reduction-synchronization/" \
 #                 "2020_02_10_19h26min27sec_CVM_dictionary_small_bipartite_2D"\
 #                 "_freq_not_aligned_3.json"
 # sigma_array = np.linspace(0.1, 3, 50)
@@ -234,15 +247,13 @@ sigma_array = np.array([0] + list(np.linspace(0.1, 4, 99)))
 #
 
 """ SBM, n = 2 """
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/SBM/CVM_data/" \
+# CVM_dict_path = "C:\Users\thivi\Documents\GitHub\threefold-way-dimension-reduction-synchronization\graphs\SBM" \
 #                 "2020_02_09_23h06min16sec_CVM_dictionary_SBM_2D" \
 #                 "_pin_0_8_pout_0_2.json"
 # sigma_array = np.linspace(2, 5, 50)
 
 """ Bipartite, n = 3 """
-# CVM_dict_path = "C:/Users/thivi/Documents/GitHub/network-synch/" \
-#                 "synch_predictions/graphs/SBM/CVM_data/" \
+# CVM_dict_path = "C:\Users\thivi\Documents\GitHub\threefold-way-dimension-reduction-synchronization\graphs\SBM" \
 #                 "2020_02_10_09h14min33sec_CVM_dictionary_bipartite_3D" \
 #                 "_pout_0_2.json"
 #
