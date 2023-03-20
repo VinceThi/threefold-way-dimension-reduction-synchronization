@@ -22,7 +22,7 @@ Figures 6 and 7 of the paper are obtained with the Python script "simulations/sy
 
 Figure 8 of the paper is obtained with the Python script "simulations/get_synchro_transitions_multiple_realizations.py".
 
-Figure 13 of the paper is obtained from the Python script "simulations/synchro_transition_kuramoto_sakaguchi_one_star.py".
+Figure 14 of the paper is obtained from the Python script "simulations/synchro_transition_kuramoto_sakaguchi_one_star.py".
 
 "simulations/synchro_transition_kuramoto_reduction_combination_WKA.py" is to answer to the question 1 of the reviewer.
 
