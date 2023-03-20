@@ -10,7 +10,7 @@ from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 import itertools
 
 
-win_kur_theta = 0
+win_kur_theta = 1
 
 if win_kur_theta:
 
@@ -123,8 +123,10 @@ if win_kur_theta:
         infos_realizations_dictionary_path = \
             get_infos_realizations_dictionary_absolute_path(
                 setup_string)
-        with open(f'C:/Users/thivi/Documents/GitHub/network-synch/'
-                  f'synch_predictions/simulations/data/'
+
+        with open(f'C:/Users/thivi/Documents/GitHub/'
+                  f'threefold-way-dimension-reduction-synchronization/'
+                  f'simulations/data/'
                   f'synchro_transitions_multiple_realizations/'
                   f'{infos_realizations_dictionary_path}.json') as json_data:
             infos_realizations_dictionary = json.load(json_data)
