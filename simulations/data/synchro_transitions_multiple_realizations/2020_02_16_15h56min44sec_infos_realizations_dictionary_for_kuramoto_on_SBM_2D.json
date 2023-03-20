@@ -1,0 +1,1 @@
+{"N1": 300, "N2": 200, "sizes": [300, 200], "affinity_matrix": [[0.7, 0.2], [0.2, 0.5]], "graph_str": "SBM", "number_realizations": 50, "omega_mean": 0.3, "omega_variance": 0.01, "timestr": "2020_02_16_15h56min44sec"}

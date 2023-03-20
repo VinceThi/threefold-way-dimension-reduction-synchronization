@@ -21,7 +21,7 @@ def get_m(A, sizes):
     :return: m: (qxq array) number of edges counts between block pairs
     """
     q = len(sizes)    # number of blocks
-    N = len(A[:, 0])  # number of nodes
+    # N = len(A[:, 0])  # number of nodes
     m = np.zeros((q, q))
     mmu = 0
     for mu in range(q):

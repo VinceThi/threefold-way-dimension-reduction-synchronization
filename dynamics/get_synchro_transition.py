@@ -16,7 +16,7 @@ complete dynamics and the reduced dynamics
 """
 
 """-------- Synchronization transition for a single graphs -----------------"""
-"""------------------- Section III D. article ------------------------------"""
+"""------------------- Section III D and E article -------------------------"""
 
 
 def get_synchro_transition_phase_dynamics_graphs(
