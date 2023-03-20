@@ -1,0 +1,14 @@
+t0 = 0
+t1 = 500
+deltat = 0.05
+Number of nodes : N = 6
+Dimension of the reduced dynamics : n = 2
+theta0 = np.array(0.0, 6.283, 6)
+sigma_array = np.array(0.01, 8.0, 20)
+M = [[0.33333333 0.33333333 0.33333333 0.         0.         0.        ]
+ [0.         0.         0.         0.33333333 0.33333333 0.33333333]]
+
+T_1 = W
+ T_2 = None
+ T_3 = None
+

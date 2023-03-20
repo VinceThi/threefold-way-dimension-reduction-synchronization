@@ -1,4 +1,12 @@
 # Ignore everything in this directory
 *
+
 # Except this file
 !.gitignore
+
+# ...even if they are in subdirectories
+!*/
+
+# if the files to be tracked are in subdirectories
+!*kuramoto_secIIID_article/*
+!*errors_kuramoto_vs_n/*

@@ -38,7 +38,8 @@ M_list_path = "2020_10_03_18h20min32sec_two_targets_A_W_M_list" \
 #               "_nbinit2000_M_list.json"
 # M_list_path = "2020_09_28_18h11min06sec_snmf_niter2000_onmf_maxiter1000" \
 #               "_nbinit2000_M_list.json"
-with open(f'C:/Users/thivi/Documents/GitHub/network-synch/synch_predictions/'
+with open(f'C:/Users/thivi/Documents/GitHub/'
+          f'threefold-way-dimension-reduction-synchronization/'
           f'graphs/two_triangles/reduction_matrices_n/{M_list_path}')\
         as json_data:
     M_list = json.load(json_data)

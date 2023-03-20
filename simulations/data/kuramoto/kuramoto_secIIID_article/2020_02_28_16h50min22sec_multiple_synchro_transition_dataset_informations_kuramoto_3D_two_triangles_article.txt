@@ -1,0 +1,25 @@
+t0 = 0
+t1 = 20000
+deltat = 1
+Number of nodes : N = 6
+Dimension of the reduced dynamics : n = 3
+theta0 = [  3.62504853  -5.67534907 -24.56916613  -2.79715251  -1.54192081
+ -16.93962401]
+sigma_array = np.array(0.0, 4.0, 100)
+
+ multiple_synchro_transition_dictionary is a dictionary that contains the transitions for all the 
+  possible targets W,K,A,WK,WA,KW,KA,AW,AK,WKA,WAK,KWA,KAW,AWK,AKW
+ The keys are given below, where {} = all the possible targets: 
+  Keys                                                       
+ { r_...,                     -> Global synchro observables  
+                             of the complete dynamics        
+   R_...,                     -> Global synchro observables  
+                               of the reduced dynamics       
+   r_mu_matrix,               -> Mesoscopic synchro observables  
+                                 of the complete dynamics        
+   R_mu_matrix...,            -> Mesoscopic synchro observables  
+                                 of the reduced dynamics       
+  sigma_array, W, K, A, n, N, theta0}
+
+CVM_dictionary path :
+ C:/Users/thivi/Documents/GitHub/network-synch/synch_predictions/graphs/two_triangles/CVM_data/2020_02_28_13h51min30sec_CVM_dictionary_two_triangles_3D_V_K_all_nodes_V_A_dominant_veps.json

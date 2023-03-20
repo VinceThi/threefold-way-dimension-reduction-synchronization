@@ -1,0 +1,15 @@
+t0 = 0
+t1 = 500
+deltat = 0.05
+Number of nodes : N = 6
+Dimension of the reduced dynamics : n = 3
+theta0 = np.array(0.0, 6.283, 6)
+sigma_array = np.array(0.1, 4.0, 500)
+
+ multiple_synchro_transition_dictionary is a dictionary that contains the transitions for all the  possible targets W,K,A,WK,WA,KW,KA,AW,AK,WKA,WAK,KWA,KAW,AWK,AKW. The keys are given below, where {} = all the possible targets: 
+  Keys                                                      
+ { r_{},                      -> Global synchro observables  
+                              of the complete dynamics       
+   R_{},                      -> Global synchro observables  
+                                of the reduced dynamics      
+   sigma_array, W, K, A, n, N, theta0}
