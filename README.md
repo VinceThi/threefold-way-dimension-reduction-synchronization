@@ -30,7 +30,7 @@ year = {2020}
 
 #### Simulations
 
-Code to generate the results from the functions in the folders `dynamics` and `graphs` and to generate the figures of the paper (note that many of them are assembled with Inkscape). IMPORTANT: The path to access the data in the scripts have to be modified by the user at the moment.
+Code to generate the results from the functions in the folders `dynamics` and `graphs` and to generate the figures of the paper (note that many of them are assembled with Inkscape). IMPORTANT: The path to access the data in the scripts have to be modified by the user.
 
 - Figures 6 and 7 of the paper are obtained with the Python script `simulations/synchro_transition_kuramoto_reduction_multiple_targets.py`. The script to plot Fig.~6 is `plot_multiple_synchro_transition_phase_dynamics.py` (with `win_kur_theta = 1`).
 
