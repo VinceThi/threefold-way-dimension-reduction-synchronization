@@ -1,5 +1,5 @@
 # threefold-way-dimension-reduction-synchronization
-Code for the paper "[Threefold way to the dimension reduction of dynamics on networks: An application to synchronization](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.043215)". The code is not cleaned up and a lot of simplification work should be done, along with unit tests. One should find all the necessary information (equations and important packages) to implement the method of the project in the paper:
+Code for the paper "[Threefold way to the dimension reduction of dynamics on networks: An application to synchronization](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.043215)". The code is not cleaned up and a lot of simplification work should be done. One should find all the necessary information (equations and important packages) to implement the method of the project in the paper:
 
 ```
 @article{Thibeault2020,
