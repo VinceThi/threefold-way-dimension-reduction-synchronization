@@ -32,11 +32,13 @@ year = {2020}
 
 Code to generate the results from the functions in the folders `dynamics` and `graphs` and to generate the figures of the paper (note that many of them are assembled with Inkscape). IMPORTANT: The path to access the data in the scripts have to be modified by the user.
 
-- Figures 6 and 7 of the paper are obtained with the Python script `simulations/synchro_transition_kuramoto_reduction_multiple_targets.py`. The script to plot Fig.~6 is `plot_multiple_synchro_transition_phase_dynamics.py` (with `win_kur_theta = 1`).
+- Figure 6 of the paper is obtained with the script `simulations/synchro_transition_kuramoto_reduction_multiple_targets.py` and `plot_multiple_synchro_transition_phase_dynamics.py` (with `win_kur_theta = 1`).
 
-- Figure 8 of the paper is obtained with the Python script `simulations/get_synchro_transitions_multiple_realizations.py` The script to plot the data is `plot_multiple_synchro_transition_phase_dynamics.py` (with `win_kur_theta = 0`).
+- Figure 7 of the paper is obtained with the script `synchro_transition_kuramoto_reduction_different_n.py`.
 
-- Figure 14 of the paper is obtained from the Python script `simulations/synchro_transition_kuramoto_sakaguchi_one_star.py`.
+- Figure 8 of the paper is obtained with the script `simulations/get_synchro_transitions_multiple_realizations.py` and `plot_multiple_synchro_transition_phase_dynamics.py` (with `win_kur_theta = 0`).
+
+- Figure 14 of the paper is obtained from the script `simulations/synchro_transition_kuramoto_sakaguchi_one_star.py`.
 
 - Figure 15 of the paper (Lorenz dynamics) is obtained from the Python script `simulations/chaotic_oscillators.py`.
 
